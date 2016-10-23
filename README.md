@@ -1,24 +1,24 @@
 # Floating Form Labels ([Demo](http://codepen.io/jChris85/pen/jrZypv))
-Floating Form Labels takes [the concept from Matt D. Smit](https://dribbble.com/shots/1254439--GIF-Mobile-Form-Interaction) and wraps it into an easy to use jQuery plugin that is written by [jChris85](https://github.com/jChris85) and me. Take a look to [the blog post from Brad Frost](http://bradfrost.com/blog/post/float-label-pattern/) to understand why this is essential when dealing with inline form labels.
+Floating Form Labels take [the concept from Matt D. Smit](https://dribbble.com/shots/1254439--GIF-Mobile-Form-Interaction) and wraps it into an easy to use jQuery plugin that is written by [jChris85](https://github.com/jChris85) and me. Take a look to [the blog post from Brad Frost](http://bradfrost.com/blog/post/float-label-pattern/) to understand why this is essential when dealing with inline form labels.
 
 ![Floating Form Labels Demo](https://cloud.githubusercontent.com/assets/412895/19565872/9ff91416-9712-11e6-8f2f-2e05fe6ac5d2.gif)
 
 > But there are some other code snippets out there that do the same thing. Why do I need another one?
 
 Floating Form Labels ...
-* is [UMD](https://github.com/umdjs/umd) capable (can be loaded with any module loader)
-* supports the placeholder attribute
-* is markup agnostic (works with nearly every markup)
-* works with inputs _and_ textareas
+* are [UMD](https://github.com/umdjs/umd) capable (can be loaded with any module loader)
+* support the placeholder attribute
+* are markup agnostic (they work with nearly every markup)
+* work with inputs _and_ text areas
 
 ## Installation
-We recommend using a package manager to install Floating Form Labels as a dependency of your project. Please read the docs of the respective package manager if you don't know how to use it.
+Reccomended: Use a package manager to install Floating Form Labels as a dependency of your project. Please read the docs of the respective package manager if you don't know how to use it.
 * [npm](https://www.npmjs.com/package/floating-form-labels): `npm install floating-form-labels`
 * Bower: `bower install floating-form-labels`
 
-You can add `--save` as parameter if you want to add the plugin into your `package.json` or `bower.json`.
+###### Note: You can add `--save` as parameter if you want to add the plugin into your `package.json` or `bower.json`.
 
-Alternatively, you can also download the plugin directly from GitHub, unzip the folder and copy the file `floating-form-labels/dist/floatingFormLabels.min.js` to your project.
+Alternative: You can download the plugin directly from GitHub, unzip the folder and copy the file `floating-form-labels/dist/floatingFormLabels.min.js` to your project.
 
 ## Usage
 ### HTML
@@ -38,7 +38,7 @@ It's a good idea to add a unique class to your labels as well to avoid bugs if t
 ```
 
 ### JavaScript
-Next you have to load the file `floating-form-labels/dist/floatingFormLabels.min.js` into your project and make sure that [jQuery](http://jquery.com/) is ready to use. You can do this by adding another script tag to your DOM or use a module loader for that. Then you have to call the plugin with a selector that matches your wrapping containers.
+Next you have to load the file `floating-form-labels/dist/floatingFormLabels.min.js` into your project and make sure that [jQuery](http://jquery.com/) is ready to use. You can do this by adding another script tag to your DOM or by using a module loader for that. You will then have to call the plugin with a selector that matches your wrapping containers.
 
 ```javascript
 $('.ffl-wrapper').floatingFormLabels();
@@ -83,7 +83,7 @@ By default Floating Form Labels just triggers some classes in the DOM. To see th
     @include floating-form-labels($position-top, $reserved-space);
 }
 ```
-As you can see there are **two parameters our mixin expects**. The first one (`$position-top`) is used to move the label from its regular position above the input element. The second one (`$reserved-space`) is used to create a padding-top inside the wrapper to reserve the space for the label to get floated.
+As you can see there are **two parameters in our mixin expects**. The first one (`$position-top`) is used to move the label from its regular position above the input element. The second one (`$reserved-space`) is used to create a padding-top inside the wrapper to reserve the space for the label to get floated.
 
 > Why didn't you choose a better way to center the label above the input?
 
